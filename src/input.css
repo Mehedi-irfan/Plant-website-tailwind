@@ -12,3 +12,31 @@ body {
 .nav-link:hover {
   @apply text-yellow-400;
 }
+section {
+  @apply py-20 md:py-28;
+}
+h1 {
+  @apply text-3xl md:text-4xl xl:text-5xl font-bold;
+}
+/* button  */
+.btn {
+  @apply border border-yellow-500 bg-yellow-500 px-4 py-2 rounded-md duration-300;
+}
+.btn span {
+  @apply font-bold;
+}
+.btn:hover {
+  @apply opacity-90;
+}
+.btn-outline {
+  @apply bg-transparent;
+}
+.social-icon {
+  @apply text-slate-300 cursor-pointer duration-300;
+}
+.social-icon:hover {
+  @apply text-yellow-500;
+}
+.blob {
+  @apply lg:w-64 lg:h-64 w-52 h-52 bg-green-700 rounded-full blur-3xl -z-10 opacity-40 absolute;
+}
