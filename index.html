@@ -21,7 +21,33 @@
   </head>
   <body>
     <!-- header section start  -->
-    <header id="navbar"></header>
+    <header id="navbar" class="bg-green-950 fixed w-full z-50 top-0 left-0">
+      <nav class="container flex justify-between items-center h-15 sm:h-20">
+        <!-- logo  -->
+        <div class="font-lobster sm:text-2xl">IndorePlants</div>
+        <!-- nav bar  -->
+        <div
+          id="nav_menu"
+          class="absolute top-0 left-[-100%] min-h-[80vh] w-full bg-green-950/80 backdrop-blur-sm flex items-center justify-center duration-300 overflow-hidden lg:static lg:min-h-fit lg:bg-transparent lg:w-auto"
+        >
+          <ul class="flex flex-col items-center sm:gap-6 lg:gap-12 lg:flex-row">
+            <li><a class="nav-link" href="#home">Home</a></li>
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#popular">Popular</a></li>
+            <li><a class="nav-link" href="#review">Review</a></li>
+          </ul>
+          <div class="absolute bottom-0 -right-10 opacity-90 lg:hidden">
+            <img class="w-32" src="./assets/img/leaf-1.png" alt="" />
+          </div>
+          <div class="absolute -top-5 -left-5 rotate-90 opacity-90 lg:hidden">
+            <img class="w-32" src="./assets/img/leaf-2.png" alt="" />
+          </div>
+        </div>
+        <div class="text-xl sm:2xl z-50 lg:hidden">
+          <i class="ri-menu-4-line" id="hamburg"></i>
+        </div>
+      </nav>
+    </header>
     <!-- header section End  -->
 
     <!-- main section start  -->
@@ -36,5 +62,6 @@
     <!-- swiper js  -->
     <!-- scroll reveal  -->
     <!-- main js  -->
+    <script src="js/main.js"></script>
   </body>
 </html>
