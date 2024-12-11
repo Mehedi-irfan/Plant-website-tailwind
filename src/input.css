@@ -18,6 +18,15 @@ section {
 h1 {
   @apply text-3xl md:text-4xl xl:text-5xl font-bold;
 }
+h2 {
+  @apply text-3xl md:text-4xl xl:text-5xl;
+}
+h3 {
+  @apply text-2xl md:text-3xl xl:text-4xl;
+}
+.title {
+  @apply font-lobster text-yellow-500;
+}
 /* button  */
 .btn {
   @apply border border-yellow-500 bg-yellow-500 px-4 py-2 rounded-md duration-300;
