@@ -88,3 +88,12 @@ const activeLink = () => {
 };
 window.addEventListener("scroll", activeLink);
 // scroll reveal animation
+const sr = scrollReveal({
+  origin: "top",
+  distance: "60px",
+  duration: 2500,
+  delay: 300,
+  reset: true,
+});
+sr.reveal(`.home__data`);
+sr.reveal(`.home__image`, { delay: 500, scale: 0.5 });
