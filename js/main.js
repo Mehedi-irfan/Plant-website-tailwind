@@ -88,12 +88,22 @@ const activeLink = () => {
 };
 window.addEventListener("scroll", activeLink);
 // scroll reveal animation
-const sr = scrollReveal({
+const sr = ScrollReveal({
   origin: "top",
   distance: "60px",
   duration: 2500,
   delay: 300,
   reset: true,
 });
-sr.reveal(`.home__data`);
+sr.reveal(
+  `.home__data, .about__top, .popular__top, .review__top, .review__swiper, .footer__icon, .footer__content, .footer__copyright, .footer__newslatter`
+);
 sr.reveal(`.home__image`, { delay: 500, scale: 0.5 });
+
+sr.reveal(`.service__card, .popular__card`, { interval: 100 });
+sr.reveal(`.about__leaf`, { delay: 1000, origin: "right" });
+
+sr.reveal(`.about__content_1, .about__img_2`, { origin: "right" });
+sr.reveal(`.about__content_2, .about__img_1, .review__leaf, .footer__floral`, {
+  origin: "left",
+});
